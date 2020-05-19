@@ -10,7 +10,7 @@
         <a href="index.html">
           <img src="https://via.placeholder.com/150x100" width="164" height="35" alt="Логотип интернт-магазина гаджетов Девайс">
         </a>
-        <!-- <input type="text" name="search" placeholder="Поиск по сайту"> -->
+        <input type="text" name="search" placeholder="Поиск по сайту">
         <a href="login.html">Войти</a>
         <a href="blank.html">Сравнить</a>
         <a href="blank.html">Корзина</a>
@@ -64,7 +64,56 @@
         </li>
       </ul>
       <section>
-        <h2>Фильтр товаров</h2>
+        <h2>Фильтр товаров по характеристикам</h2>
+        <!--Видел на других сайтах, что подобные конструкции делают примерно так.
+            Есть ещё какие-то способы? Див здесь в тему или нет?-->
+        <div class="filtering">
+          <span>Фильтр:</span>
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label><input type="range" min="0" max="8000"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label><input type="checkbox" checked>Чёрный</label>
+            <label><input type="checkbox">Белый</label>
+            <label><input type="checkbox" checked>Синий</label>
+            <label><input type="checkbox" checked>Красный</label>
+            <label><input type="checkbox">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label><input type="radio" checked>Есть</label>
+            <label><input type="radio">Нет</label>
+          </fieldset>
+          <button type="button" name="showButton">Показать</button>
+        </div>
+      </section>
+      <section>
+        <h2>Сортировка товаров</h2>
+        <div class="sorting">
+          <span>
+            Cортировка:
+          </span>
+          <ul>
+            <li>
+              <span>
+                По цене
+              </span>
+            </li>
+            <li>
+              <span>
+                По типу
+              </span>
+            </li>
+            <li>
+              <span>
+                По популярности
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!---->
       </section>
       <section>
         <h2>Список селфи палок</h2>
@@ -72,7 +121,7 @@
           <li>
             <a href="blank.html">
               <h3>Любительская селфи-палка</h3>
-              <p> <!-- зачем оборачивать в параграф изображение товара? -->
+              <p>
                 <img src="product" alt="Любительская селфи-палка" width="360" height="380">
               </p>
             </a>
@@ -115,15 +164,59 @@
           </li>
         </ul>
       </section>
+        <!--Вот тут непонятно. Стоит ли делать отдельную секцию для нумерации страниц?-->
+      <section>
+        <h2>Нумерация страниц</h2>          
+        <ul>
+          <li>
+            <a>
+              Назад
+            </a>
+          </li>
+          <li>
+            <a>
+              1
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              3
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              Вперед
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
+      <!--Стоит ли обернуть хедер в футере в какой-нибудь контейнер?-->
+      <a>
+        <img src="https://via.placeholder.com/150x100" width="164" height="35" alt="Логотип интернт-магазина гаджетов Девайс">
+      </a>
+      <a href="login.html">Войти</a>
+      <a href="compare.html">Сравнить</a>
+      <a href="basket.html">Корзина</a>
+      <ul>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <!---->
       <section>
         <h2>Как нас найти</h2>
         <p>
           г. Москва, ул. Строителей, 15
         </p>
         <p>
-          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a> 
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </p>
       </section>
       <section>
