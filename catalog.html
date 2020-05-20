@@ -10,7 +10,9 @@
         <a href="index.html">
           <img src="https://via.placeholder.com/150x100" width="164" height="35" alt="Логотип интернт-магазина гаджетов Девайс">
         </a>
-        <input type="text" name="search" placeholder="Поиск по сайту">
+        <form action="#" method="post">
+      		<input type="text" name="search" placeholder="Поиск по сайту">
+      	</form>
         <a href="login.html">Войти</a>
         <a href="blank.html">Сравнить</a>
         <a href="blank.html">Корзина</a>
@@ -65,29 +67,30 @@
       </ul>
       <section>
         <h2>Фильтр товаров по характеристикам</h2>
-        <!--Видел на других сайтах, что подобные конструкции делают примерно так.
-            Есть ещё какие-то способы? Див здесь в тему или нет?-->
-        <div class="filtering">
-          <span>Фильтр:</span>
-          <fieldset>
-            <legend>Стоимость</legend>
-            <label><input type="range" min="0" max="8000"></label>
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <label><input type="checkbox" checked>Чёрный</label>
-            <label><input type="checkbox">Белый</label>
-            <label><input type="checkbox" checked>Синий</label>
-            <label><input type="checkbox" checked>Красный</label>
-            <label><input type="checkbox">Розовый</label>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <label><input type="radio" checked>Есть</label>
-            <label><input type="radio">Нет</label>
-          </fieldset>
-          <button type="button" name="showButton">Показать</button>
-        </div>
+        <form action="#" method="get">
+          <div class="filtering">
+            <span>Фильтр:</span>
+            <fieldset>
+              <legend>Стоимость</legend>
+              <label>от<input type="text" value="0"></label>
+              <label>до<input type="text" value="5000"></label>
+            </fieldset>
+            <fieldset>
+              <legend>Цвет</legend>
+              <label><input type="checkbox" name="color" value="black" checked>Чёрный</label>
+              <label><input type="checkbox" name="color" value="white">Белый</label>
+              <label><input type="checkbox" name="color" value="blue" checked>Синий</label>
+              <label><input type="checkbox" name="color" value="red" checked>Красный</label>
+              <label><input type="checkbox" name="color" value="pink">Розовый</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
+              <label><input type="radio" name="bluetooth" value="no">Нет</label>
+            </fieldset>
+            <button type="submit" name="show">Показать</button>
+          </div>
+        </form>
       </section>
       <section>
         <h2>Сортировка товаров</h2>
@@ -97,23 +100,34 @@
           </span>
           <ul>
             <li>
-              <span>
+              <a>
                 По цене
-              </span>
+              </a>
             </li>
             <li>
-              <span>
+              <a>
                 По типу
-              </span>
+              </a>
             </li>
             <li>
-              <span>
+              <a>
                 По популярности
-              </span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a>
+                По возрастанию
+              </a>
+            </li>
+            <li>
+              <a>
+                По убыванию
+              </a>
             </li>
           </ul>
         </div>
-        <!---->
       </section>
       <section>
         <h2>Список селфи палок</h2>
@@ -164,9 +178,8 @@
           </li>
         </ul>
       </section>
-        <!--Вот тут непонятно. Стоит ли делать отдельную секцию для нумерации страниц?-->
       <section>
-        <h2>Нумерация страниц</h2>          
+        <h2>Нумерация страниц</h2>
         <ul>
           <li>
             <a>
@@ -197,7 +210,6 @@
       </section>
     </main>
     <footer>
-      <!--Стоит ли обернуть хедер в футере в какой-нибудь контейнер?-->
       <a>
         <img src="https://via.placeholder.com/150x100" width="164" height="35" alt="Логотип интернт-магазина гаджетов Девайс">
       </a>
@@ -209,7 +221,6 @@
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      <!---->
       <section>
         <h2>Как нас найти</h2>
         <p>
