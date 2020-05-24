@@ -76,23 +76,50 @@
             <span>Фильтр:</span>
             <fieldset>
               <legend>Стоимость</legend>
-              <label>от<input type="text" value="0"></label>
-              <label>до<input type="text" value="5000"></label>
+              <label for="price-from">от</label>
+              <input type="text" id="price-from" name="from" value="0">
+              <label for="price-to">до</label>
+              <input type="text" id="price-to" name="to" value="5000">
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
-              <label><input type="checkbox" name="color" value="black" checked>Чёрный</label>
-              <label><input type="checkbox" name="color" value="white">Белый</label>
-              <label><input type="checkbox" name="color" value="blue" checked>Синий</label>
-              <label><input type="checkbox" name="color" value="red" checked>Красный</label>
-              <label><input type="checkbox" name="color" value="pink">Розовый</label>
+              <ul>
+                <li>
+                  <label for="color-black">Чёрный</label>
+                  <input type="checkbox" id="color-black" name="black" checked>
+                </li>
+                <li>
+                  <label for="color-white">Белый</label>
+                  <input type="checkbox" id="color-white" name="white">
+                </li>
+                <li>
+                  <label for="color-blue">Синий</label>
+                  <input type="checkbox" id="color-blue" name="blue" checked>
+                </li>
+                <li>
+                  <label for="color-red">Красный</label>
+                  <input type="checkbox" id="color-red" name="red" checked>
+                </li>
+                <li>
+                  <label for="color-pink">Розовый</label>
+                  <input type="checkbox" id="color-pink" name="pink">
+                </li>
+              </ul>
             </fieldset>
             <fieldset>
               <legend>Bluetooth</legend>
-              <label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
-              <label><input type="radio" name="bluetooth" value="no">Нет</label>
+              <ul>
+                <li>
+                  <label for="bluetooth-yes">Есть</label>
+                  <input type="radio" id="bluetooth-yes"  name="bluetooth" value="yes" checked>
+                </li>
+                <li>
+                  <label for="bluetooth-no">Нет</label>
+                  <input type="radio" id="bluetooth-no" name="bluetooth" value="no">
+                </li>
+              </ul>
             </fieldset>
-            <button type="submit" name="show">Показать</button>
+            <button type="submit">Показать</button>
           </div>
         </form>
       </section>
