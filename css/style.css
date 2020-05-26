@@ -78,8 +78,39 @@ img {
   color: var(--basic-black);
 }
 
+/* About us / our contacts sections */
+.about-us h2,
+.our-contacts h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about-us p,
+.our-contacts p {
+  font-family: "Open Sans", Arial, sans-serif; /* несколько раз приходится писать этот код. есть идея сделать класс "alt-font",
+  добавить в этот файл один раз и потом всем необходимым элементам добавлять этот класс. что думаешь?*/
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us ul {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  list-style-type: circle;
+}
+
+.more-details-button {
+  text-decoration: none;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
 /* User navigation */
-.search-navigation,
+.search-form,
 .user-navigation {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -95,7 +126,62 @@ img {
   list-style: none;
 }
 
+/* Main footer */
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+/* Footer logo */
+.main-footer-logo {
+  border: 5px solid red;
+
+}
+
+/* Footer site navigation */
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a {
+  color: var(--basic-white);
+}
+
+/* Footer user/contacts navigation */
+.footer-user-navigation,
+.footer-contacts {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.footer-user-navigation a {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
 /* Hidden elements */
-.search-navigation button {
+.search-button,
+.modal {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
