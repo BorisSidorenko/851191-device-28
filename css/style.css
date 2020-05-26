@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-      url("fonts/opensans.woff2") format("woff2"),
-      url("fonts/opensans.woff") format("woff");
+       url("fonts/opensans.woff2") format("woff2"),
+       url("fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -32,4 +32,70 @@
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
        url("fonts/gilroyextrabold.woff2") format("woff2"), /* Super Modern Browsers */
        url("fonts/gilroyextrabold.woff") format("woff"); /* Modern Browsers */
+}
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-white: #FFFFFF;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --special-yellow: #F7E296;
+  --special-green: #91C92F;
+  --special-yellow-dark: #F0C52E;
+}
+
+/* Global */
+body {
+  min-width: 1180px;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+.main-navigation-wrapper {
+  background-color: var(--special-yellow);
+}
+
+.main-navigation-wrapper a {
+  color: var(--basic-black);
+}
+
+/* User navigation */
+.search-navigation,
+.user-navigation {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.site-navigation {
+  text-transform: uppercase;
+}
+
+.site-navigation ul {
+  list-style: none;
+}
+
+/* Hidden elements */
+.search-navigation button {
+  display: none;
 }
