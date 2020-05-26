@@ -37,6 +37,7 @@
 /* Variables */
 :root {
   --basic-black: #000000;
+  --basic-black-rgb: 0, 0, 0;
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-grey: #464646;
@@ -126,6 +127,15 @@ img {
   list-style: none;
 }
 
+.category-navigation-list {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+}
+
 /* Main footer */
 .main-footer {
   background-color: var(--basic-dark);
@@ -170,6 +180,87 @@ img {
 
 .footer-social ul {
   list-style: none;
+}
+
+/* Catalog.html */
+.page-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+    color: rgba(var(--basic-black-rgb), 0.3);
+}
+
+.breadcrumbs a[href]:hover,
+.breadcrumbs a:focus {
+  color: rgba(var(--basic-black-rgb), 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(var(--basic-black-rgb), 0.1);
+}
+
+/* Filters */
+.filters legend {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filters ul {
+  list-style-type: none;
+}
+
+.filters label {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter-button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--basic-white);
+}
+/* Catalog */
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
 }
 
 /* Hidden elements */
