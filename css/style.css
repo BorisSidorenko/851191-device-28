@@ -50,9 +50,6 @@
 
   --main--font-family: "Gilroy", Arial, sans-serif;
   --aditional--font-family: "Open Sans", Arial, sans-serif;
-  /* Сюда ещё можно вынести остальные настройки шрифта, которые чаще всего повторяются.
-     Мне кажется, что я делаю что-то не совсем правильно, т.к. я насчитал больше 10 случаев, когда я меняю в стилях настройки шрифтов.
-     Может их надо на уровень выше выносить, чтобы они на большее кол-во элементов распространялись? Можешь подсказать что-нибудь? */
 }
 
 /* Global */
@@ -78,11 +75,11 @@ img {
 }
 
 /* Main navigation */
-.navigation-wrapper {
+.nav-wrapper {
   background-color: var(--special-yellow);
 }
 
-.navigation-wrapper a {
+.nav-wrapper a {
   color: var(--basic-black);
 }
 
@@ -118,18 +115,18 @@ img {
 
 /* User navigation */
 .search-form,
-.user-navigation {
+.user-nav {
   font-family: var(--aditional--font-family);
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
 }
 
-.site-navigation {
+.site-nav {
   text-transform: uppercase;
 }
 
-.site-navigation ul {
+.site-nav ul {
   list-style: none;
 }
 
@@ -153,36 +150,36 @@ img {
 }
 
 /* Footer site navigation */
-.main-footer .site-navigation {
+.main-footer .site-nav {
   list-style: none;
 }
 
-.main-footer .site-navigation a {
+.site-nav .footer-link {
   color: var(--basic-white);
 }
 
 /* Footer user/contacts navigation */
-.main-footer .user-navigation,
-.main-footer .contacts {
+.user-nav .footer-link,
+.footer-contacts {
   font-family: var(--aditional--font-family);
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
 }
 
-.main-footer .user-navigation a {
+.user-nav .footer-link {
   color: rgba(var(--basic-white-rgb), 0.7)
 }
 
-.main-footer .contacts a {
+.footer-contacts .footer-link {
   color: var(--basic-white);
 }
 
-.main-footer .social {
+.footer-social {
   text-align: center;
 }
 
-.main-footer .social ul {
+.footer-social .social-list {
   list-style: none;
 }
 
