@@ -38,6 +38,7 @@
 :root {
   --basic-black: #000000;
   --basic-black-rgb: 0, 0, 0;
+  --basic-white-rgb: 255, 255, 255;
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-grey: #464646;
@@ -46,6 +47,12 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
+
+  --main--font-family: "Gilroy", Arial, sans-serif;
+  --aditional--font-family: "Open Sans", Arial, sans-serif;
+  /* Сюда ещё можно вынести остальные настройки шрифта, которые чаще всего повторяются.
+     Мне кажется, что я делаю что-то не совсем правильно, т.к. я насчитал больше 10 случаев, когда я меняю в стилях настройки шрифтов.
+     Может их надо на уровень выше выносить, чтобы они на большее кол-во элементов распространялись? Можешь подсказать что-нибудь? */
 }
 
 /* Global */
@@ -53,7 +60,7 @@ body {
   min-width: 1180px;
   margin: 0;
   padding: 0;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: var(--main--font-family);
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -90,8 +97,7 @@ img {
 
 .about-us p,
 .our-contacts p {
-  font-family: "Open Sans", Arial, sans-serif; /* несколько раз приходится писать этот код. есть идея сделать класс "alt-font",
-  добавить в этот файл один раз и потом всем необходимым элементам добавлять этот класс. что думаешь?*/
+  font-family: var(--aditional--font-family);
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -113,7 +119,7 @@ img {
 /* User navigation */
 .search-form,
 .user-navigation {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--aditional--font-family);
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -128,7 +134,7 @@ img {
 }
 
 .category-list {
-  font-family: Open Sans;
+  font-family: var(--aditional--font-family);
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -158,14 +164,14 @@ img {
 /* Footer user/contacts navigation */
 .main-footer .user-navigation,
 .main-footer .contacts {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--aditional--font-family);
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
 }
 
 .main-footer .user-navigation a {
-  color: rgba(255, 255, 255, 0.7)
+  color: rgba(var(--basic-white-rgb), 0.7)
 }
 
 .main-footer .contacts a {
@@ -189,7 +195,7 @@ img {
 
 /* Breadcrumbs */
 .breadcrumbs {
-  font-family: Open Sans;
+  font-family: var(--aditional--font-family);
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -222,7 +228,7 @@ img {
 }
 
 .filters label {
-  font-family: Open Sans;
+  font-family: var(--aditional--font-family);
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
