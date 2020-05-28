@@ -71,11 +71,11 @@ img {
 }
 
 /* Main navigation */
-.main-navigation-wrapper {
+.navigation-wrapper {
   background-color: var(--special-yellow);
 }
 
-.main-navigation-wrapper a {
+.navigation-wrapper a {
   color: var(--basic-black);
 }
 
@@ -104,7 +104,7 @@ img {
   list-style-type: circle;
 }
 
-.more-details-button {
+.details-button {
   text-decoration: none;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -127,7 +127,7 @@ img {
   list-style: none;
 }
 
-.category-navigation-list {
+.category-list {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
@@ -143,42 +143,40 @@ img {
 }
 
 /* Footer logo */
-.main-footer-logo {
-  border: 5px solid red;
-
+.footer-logo {
 }
 
 /* Footer site navigation */
-.footer-site-navigation {
+.main-footer .site-navigation {
   list-style: none;
 }
 
-.footer-site-navigation a {
+.main-footer .site-navigation a {
   color: var(--basic-white);
 }
 
 /* Footer user/contacts navigation */
-.footer-user-navigation,
-.footer-contacts {
+.main-footer .user-navigation,
+.main-footer .contacts {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
 }
 
-.footer-user-navigation a {
+.main-footer .user-navigation a {
   color: rgba(255, 255, 255, 0.7)
 }
 
-.footer-contacts a {
+.main-footer .contacts a {
   color: var(--basic-white);
 }
 
-.footer-social {
+.main-footer .social {
   text-align: center;
 }
 
-.footer-social ul {
+.main-footer .social ul {
   list-style: none;
 }
 
@@ -249,14 +247,14 @@ img {
   color: var(--basic-black);
 }
 
-.catalog-item-title {
+.catalog-item .item-title {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
 }
 
-.catalog-item-price {
+.catalog-item .item-price {
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
