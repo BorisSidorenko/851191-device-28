@@ -118,6 +118,8 @@ img {
 /* Category items */
 .category-items .category-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .category-list .item-link {
@@ -128,6 +130,8 @@ img {
 /* Our capability */
 .capabilities-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .capabilities-title {
@@ -147,6 +151,14 @@ img {
 .capabilities-item:nth-of-type(2) .capabilities-description {
   line-height: 30px;
 }
+
+/* Brands */
+.brands-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* About us / our contacts sections */
 .about-us h2,
@@ -192,8 +204,11 @@ img {
   text-transform: uppercase;
 }
 
-.site-nav ul {
+.site-nav .user-list,
+.site-nav .category-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav .category-list {
@@ -218,6 +233,8 @@ img {
 /* Footer site navigation */
 .main-footer .site-nav {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav .footer-link {
@@ -247,6 +264,8 @@ img {
 
 .footer-social .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Catalog.html */
@@ -263,6 +282,8 @@ img {
   font-size: 14px;
   line-height: 19px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs a {
@@ -288,6 +309,8 @@ img {
 
 .filters ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filters label {
@@ -310,6 +333,8 @@ img {
 /* Catalog */
 .catalog-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-item a {
