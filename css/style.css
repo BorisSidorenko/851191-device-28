@@ -125,6 +125,29 @@ img {
   color: var(--basic-black);
 }
 
+/* Our capability */
+.capabilities-list {
+  list-style: none;
+}
+
+.capabilities-title {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.capabilities-description {
+  font-family: var(--aditional--font-family);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+.capabilities-item:nth-of-type(2) .capabilities-description {
+  line-height: 30px;
+}
+
 /* About us / our contacts sections */
 .about-us h2,
 .our-contacts h2 {
