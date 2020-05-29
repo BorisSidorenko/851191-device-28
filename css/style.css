@@ -115,6 +115,16 @@ img {
   line-height: 42px;
 }
 
+/* Category items */
+.category-items .category-list {
+  list-style: none;
+}
+
+.category-list .item-link {
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
 /* About us / our contacts sections */
 .about-us h2,
 .our-contacts h2 {
@@ -163,7 +173,7 @@ img {
   list-style: none;
 }
 
-.category-list {
+.site-nav .category-list {
   font-family: var(--aditional--font-family);
   font-style: normal;
   font-weight: 300;
