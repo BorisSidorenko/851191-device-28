@@ -358,11 +358,12 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
+  opacity: 0.3;
 }
 
-.type-list li:not(:first-child),
-.direction-list li:first-child {
-  opacity: 0.3;
+.sorting .active,
+.pagination-item .active {
+  opacity: 1;
 }
 
 /* Catalog */
@@ -403,10 +404,6 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--basic-black);
-}
-
-.pagination-item:nth-of-type(3),
-.pagination-item:nth-of-type(4)  {
   opacity: 0.3;
 }
 
