@@ -74,14 +74,78 @@ img {
   height: auto;
 }
 
+/* Grid */
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  grid-template-columns: min-content 1fr min-content;
+  align-content: start;
+}
+
 /* Main navigation */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-logo {
+  width: 163px;
+  height: 35px;
+}
+
 .nav-wrapper {
   background-color: var(--special-yellow);
+  width: 100%;
 }
 
 .nav-wrapper a {
   color: var(--basic-black);
 }
+
+.nav-wrapper a:hover,
+.nav-wrapper a:focus {
+  opacity: 0.6;
+}
+
+.nav-wrapper a:active {
+  opacity: 0.3;
+}
+
+.user-container,
+.site-container {
+  margin-top: 44px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.user-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.capabilities-container .user-list {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-list li:nth-child(2) {
+  flex-grow: 1;
+  margin-left: 38px;
+}
+
 
 /* Slider */
 
@@ -200,6 +264,28 @@ img {
   font-weight: 300;
 }
 
+.user-container .user-nav {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-container a:first-child {
+  flex-grow: 1;
+}
+
+.user-container a {
+  padding-left: 26px;
+  margin-right: 41px;
+}
+
+.user-container a:last-child {
+  margin-right: 0;
+}
+
+/* Site navigation */
+
+
 .site-nav {
   text-transform: uppercase;
 }
@@ -218,6 +304,22 @@ img {
   font-size: 15px;
   line-height: 20px;
   text-transform: none;
+}
+
+.catalog-container .category-list {
+  margin-top: 18px;
+  margin-bottom: 46px;
+  display: grid;
+  /* Ниже указываю точные размеры колонок, ориентировался на макет. Это ок? Или тут нужен другой подход? */
+  grid-template-columns: 179px 125px 104px;
+  grid-template-rows: min-content min-content min-content;
+  grid-column-gap: 61px;
+  grid-row-gap: 20px;
+}
+
+.catalog-container .category-item:last-child {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3 ;
 }
 
 /* Main footer */

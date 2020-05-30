@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернт-магазина гаджетов Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-nav">
         <a class="header-logo">
@@ -15,49 +15,55 @@
           </svg>
         </a>
         <div class="nav-wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-form" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" id="search-form" name="search" placeholder="Поиск по сайту">
-            <button type="submit" class="search-button">Найти</button>
-          </form>
-          <div class="user-nav">
-            <a href="login.html">Войти</a>
-            <a href="blank.html">Сравнить</a>
-            <a href="blank.html">Корзина</a>
+          <div class="user-container">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label for="search-form" class="visually-hidden">Поиск по сайту</label>
+              <input type="search" id="search-form" name="search" placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">Найти</button>
+            </form>
+            <div class="user-nav">
+              <a href="login.html">Войти</a>
+              <a href="blank.html">Сравнить</a>
+              <a href="blank.html">Корзина</a>
+            </div>
           </div>
-          <div class="site-nav">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="category-list">
-              <li class="category-item">
-                <a href="catalog.html">Виртуальная реальность</a>
-              </li>
-              <li class="category-item">
-                <a href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="category-item">
-                <a href="catalog.html">Экшн-камеры</a>
-              </li>
-              <li class="category-item">
-                <a href="catalog.html">Фитнес-браслеты</a>
-              </li>
-              <li class="category-item">
-                <a href="catalog.html">Умные часы</a>
-              </li>
-              <li class="category-item">
-                <a href="catalog.html">Квадрокоптер</a>
-              </li>
-            </ul>
-            <ul class="user-list">
-              <li>
-                <a href="blank.html">Доставка</a>
-              </li>
-              <li>
-                <a href="blank.html">Гарантия</a>
-              </li>
-              <li>
-                <a href="blank.html">Контакты</a>
-              </li>
-            </ul>
+          <div class="site-container site-nav">
+            <div class="catalog-container">
+              <a href="catalog.html">Каталог товаров</a>
+              <ul class="category-list">
+                <li class="category-item">
+                  <a href="catalog.html">Виртуальная реальность</a>
+                </li>
+                <li class="category-item">
+                  <a href="catalog.html">Фитнес-браслеты</a>
+                </li>
+                <li class="category-item">
+                  <a href="catalog.html">Квадрокоптер</a>
+                </li>
+                <li class="category-item">
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="category-item">
+                  <a href="catalog.html">Умные часы</a>
+                </li>
+                <li class="category-item">
+                  <a href="catalog.html">Экшн-камеры</a>
+                </li>
+              </ul>
+            </div>
+            <div class="capabilities-container">
+              <ul class="user-list">
+                <li>
+                  <a href="blank.html">Доставка</a>
+                </li>
+                <li>
+                  <a href="blank.html">Гарантия</a>
+                </li>
+                <li>
+                  <a href="blank.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
