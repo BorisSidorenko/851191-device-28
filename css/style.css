@@ -95,8 +95,11 @@ img {
 }
 
 .header-logo {
+  /* Пока не понял, как сделать логотип наезжающим на контейнер. Пока только вижу это как отрицательный margin и z-index.
+     Есть какой-нибудь устоявшийся способ это сделать?*/
   width: 163px;
   height: 35px;
+  margin-left: 60px;
 }
 
 .nav-wrapper {
@@ -324,12 +327,56 @@ img {
 
 /* Main footer */
 .main-footer {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
   background-color: var(--basic-dark);
   color: var(--basic-white);
 }
 
+.main-footer .footer-container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.footer-container .user-nav {
+  width: 325px;
+  height: 20px;
+  margin-top: 46px;
+  margin-right: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .footer-contacts {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-container .site-nav {
+  /* Не знаю как быть с этим списком т.к. он в итоге должен оказаться между контактами. */
+  display: none;
+}
+
 /* Footer logo */
+/* Вот тут возник вопрос - как покрасить этот SVG?
+   Я пробовал разные способы, но ничего не меняется. Нашёл статью где предлагают сделать так:
+
+    svg {
+     fill: red;
+    }
+
+  У меня результата не дало.
+*/
 .footer-logo {
+  width: 163px;
+  height: 35px;
+  margin-left: 140px;
+  margin-top: 64px;
 }
 
 /* Footer site navigation */
@@ -343,7 +390,7 @@ img {
   color: var(--basic-white);
 }
 
-/* Footer user/contacts navigation */
+
 .user-nav .footer-link,
 .footer-contacts {
   font-family: var(--aditional--font-family);
@@ -356,13 +403,38 @@ img {
   color: rgba(var(--basic-white-rgb), 0.7)
 }
 
+.user-nav .footer-link:first-child {
+  padding-left: 24px;
+}
+
+.user-nav .footer-link:nth-child(2) {
+  padding-left: 25px;
+}
+
+.user-nav .footer-link:last-child {
+  padding-left: 22px;
+}
+
+.user-nav .footer-link:hover,
+.user-nav .footer-link:focus {
+  color: var(--basic-white);
+}
+
+.user-nav .footer-link:active {
+  color: rgba(var(--basic-white-rgb), 0.3);
+}
+
+
+
 .footer-contacts .footer-link {
   color: var(--basic-white);
 }
 
-.footer-social {
-  text-align: center;
+.footer-social .social-list {
+  display: flex;
+  justify-content: center;
 }
+
 
 .footer-social .social-list {
   list-style: none;
