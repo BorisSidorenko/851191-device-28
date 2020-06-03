@@ -47,7 +47,7 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
-
+  --special-yellow-footer: #FFC600;
   --main--font-family: "Gilroy", Arial, sans-serif;
   --aditional--font-family: "Open Sans", Arial, sans-serif;
 }
@@ -89,42 +89,43 @@ img {
 .main-nav {
   display: flex;
   flex-direction: column;
+  background-color: var(--special-yellow);
+  box-shadow: inset 0 40px var(--basic-white);
+}
+
+.main-header.container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .header-logo {
-  /* Пока не понял, как сделать логотип наезжающим на контейнер. Пока только вижу это как отрицательный margin и z-index.
-     Есть какой-нибудь устоявшийся способ это сделать?*/
   width: 163px;
   height: 35px;
-  margin-left: 60px;
+  padding-left: 60px;
+  padding-top: 20px;
 }
 
 .nav-wrapper {
   background-color: var(--special-yellow);
-  width: 100%;
+  padding-top: 44px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .nav-wrapper a {
   color: var(--basic-black);
 }
 
+.header-logo[href]:hover,
+.header-logo[href]:focus,
 .nav-wrapper a:hover,
 .nav-wrapper a:focus {
   opacity: 0.6;
 }
 
+.header-logo[href]:active,
 .nav-wrapper a:active {
   opacity: 0.3;
-}
-
-.user-container,
-.site-container {
-  margin-top: 44px;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 .user-container {
@@ -133,22 +134,11 @@ img {
 }
 
 .site-container {
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
-
-.capabilities-container .user-list {
-  width: 500px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.user-list li:nth-child(2) {
-  flex-grow: 1;
-  margin-left: 38px;
-}
-
 
 /* Slider */
 
@@ -230,20 +220,10 @@ img {
 /* About us / our contacts sections */
 .container-info {
   margin: 0 auto;
-  margin-bottom: 86px;
+  padding-bottom: 86px;
   width: 1160px;
   display: flex;
   justify-content: space-between;
-}
-
-.about-us {
-  width: 473px;
-  height: 580px;
-}
-
-.our-contacts {
-  width: 560px;
-  height: 580px;
 }
 
 .about-us h2,
@@ -262,11 +242,17 @@ img {
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
 .our-contacts img {
-  margin-bottom: 85px;
+  padding-bottom: 85px;
+}
+
+.our-contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-map {
@@ -277,11 +263,17 @@ img {
 .about-us ul {
   margin: 0;
   padding: 0;
-  margin-bottom: 84px;
+  padding-bottom: 84px;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
   list-style: none;
+}
+
+.about-us {
+  padding-right: 127px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us li {
@@ -293,10 +285,15 @@ img {
 }
 
 .details-button {
+  display: block;
   text-decoration: none;
   color: var(--basic-black);
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.container-info .details-button {
+  margin-top: auto;
 }
 
 /* User navigation */
@@ -315,7 +312,7 @@ img {
 }
 
 .user-container a:first-child {
-  flex-grow: 1;
+  margin-right: auto;
 }
 
 .user-container a {
@@ -332,6 +329,18 @@ img {
 
 .site-nav {
   text-transform: uppercase;
+}
+
+
+.site-nav .user-list {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-list li:nth-child(2) {
+  margin-right: auto;
+  padding-left: 38px;
 }
 
 .site-nav .user-list,
@@ -351,10 +360,9 @@ img {
 }
 
 .catalog-container .category-list {
-  margin-top: 18px;
-  margin-bottom: 46px;
+  padding-top: 18px;
+  padding-bottom: 46px;
   display: grid;
-  /* Ниже указываю точные размеры колонок, ориентировался на макет. Это ок? Или тут нужен другой подход? */
   grid-template-columns: 179px 125px 104px;
   grid-template-rows: min-content min-content min-content;
   grid-column-gap: 61px;
@@ -367,15 +375,19 @@ img {
 }
 
 /* Main footer */
-.main-footer {
-  width: 1440px;
+.footer-wrapper {
   margin: 0 auto;
-  padding: 0 10px;
+  padding-bottom: 65px;
+  width: 1160px;
+}
+
+.main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
 }
 
 .main-footer .footer-container {
+ width: 1160px;
  display: flex;
  justify-content: space-between;
 }
@@ -383,41 +395,27 @@ img {
 .footer-container .user-nav {
   width: 325px;
   height: 20px;
-  margin-top: 46px;
-  margin-right: 140px;
+  padding-top: 46px;
   display: flex;
   justify-content: space-between;
-}
-
-.footer-container .footer-contacts {
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 40px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-container .site-nav {
-  /* Не знаю как быть с этим списком т.к. он в итоге должен оказаться между контактами. */
-  display: none;
+   width: 423px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-/* Footer logo */
-/* Вот тут возник вопрос - как покрасить этот SVG?
-   Я пробовал разные способы, но ничего не меняется. Нашёл статью где предлагают сделать так:
-
-    svg {
-     fill: red;
-    }
-
-  У меня результата не дало.
-*/
 .footer-logo {
+  padding-top: 64px;
   width: 163px;
   height: 35px;
-  margin-left: 140px;
-  margin-top: 64px;
+}
+
+.footer-logo path {
+  fill: var(--special-yellow-dark);
 }
 
 /* Footer site navigation */
@@ -431,6 +429,19 @@ img {
   color: var(--basic-white);
 }
 
+.footer-nav {
+  padding-top: 40px;
+  padding-bottom: 67px;
+}
+
+.footer-nav .footer-link:hover,
+.footer-nav .footer-link:focus {
+  opacity: 0.6;
+}
+
+.footer-nav .footer-link:active {
+  opacity: 0.3;
+}
 
 .user-nav .footer-link,
 .footer-contacts {
@@ -465,13 +476,32 @@ img {
   color: rgba(var(--basic-white-rgb), 0.3);
 }
 
-.footer-contacts .footer-link {
+.footer-contacts:first-of-type {
+  order:-1;
+}
+
+.tel-link {
   color: var(--basic-white);
 }
 
-.footer-social .social-list {
+.footer-social {
+  width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--special-yellow-footer);
+}
+
+.social-list {
+  width: 136px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
