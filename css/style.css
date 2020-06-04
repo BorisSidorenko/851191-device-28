@@ -46,6 +46,7 @@
   --basic-grey-light: #E5E5E5;
   --special-yellow: #F7E296;
   --special-green: #91C92F;
+  --special-yellow-light: #F7E296;
   --special-yellow-dark: #F0C52E;
   --special-yellow-footer: #FFC600;
   --special-grey-paging: #EBEBEB;
@@ -142,6 +143,11 @@ img {
 }
 
 /* Slider */
+.main-wrapper {
+  margin: 0 auto;
+  width: 1160px;
+}
+
 
 .slide-title {
   font-family:  var(--main--font-family);
@@ -177,14 +183,41 @@ img {
 .category-items .category-list {
   list-style: none;
   padding: 0;
+  padding-top: 76px;
+  padding-bottom: 49px;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+
+  grid-column-gap: 40px;
 }
 
 .category-list .item-link {
-  letter-spacing: 0.05em;
   color: var(--basic-black);
+  box-shadow: inset 0px 160px var(--special-yellow-light);
+  display: grid;
+  grid-row-gap: 38px;
+  grid-template-rows: 160px min-content;
 }
 
+.category-list .item-link:focus,
+.category-list .item-link:hover {
+  box-shadow: inset 0px 160px var(--special-yellow-dark);
+}
+
+.category-list .item-link:active {
+  opacity: 0.3;
+}
+
+.category-item:nth-child(3) span,
+.category-item:nth-child(5) span,
+.category-item:nth-child(6) span {
+  letter-spacing: 0.05em;
+}
+
+.category-list .item-img {
+  margin: auto;
+}
 /* Our capability */
 .capabilities-list {
   list-style: none;
@@ -220,9 +253,7 @@ img {
 
 /* About us / our contacts sections */
 .container-info {
-  margin: 0 auto;
   padding-bottom: 86px;
-  width: 1160px;
   display: flex;
   justify-content: space-between;
 }
