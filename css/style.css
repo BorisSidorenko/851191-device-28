@@ -50,6 +50,7 @@
   --special-yellow-dark: #F0C52E;
   --special-yellow-footer: #FFC600;
   --special-grey-paging: #EBEBEB;
+  --special-grey-filtering: #DCDCDC;
   --main--font-family: "Gilroy", Arial, sans-serif;
   --aditional--font-family: "Open Sans", Arial, sans-serif;
 }
@@ -289,11 +290,6 @@ img {
 .our-contacts {
   display: flex;
   flex-direction: column;
-}
-
-.contacts-map {
-  /* Вот здесь проблема с выравниванием кнопок "Подробнее о нас" и "Напишите нам". Насколько я понял из инспектора,
-     проблема в том, что ссылка с картинкой занимает место - размер картикни + размер ссылки. Не получается это убрать. */
 }
 
 .about-us ul {
@@ -552,11 +548,10 @@ img {
 }
 
 
-.grid-container {
+.catalog-header.grid-container {
   width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 268px 892px;
 }
 
 .page-title {
@@ -565,6 +560,7 @@ img {
   padding-top: 44px;
   padding-bottom: 30px;
   padding-left: 60px;
+  padding-right: 60px;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -582,6 +578,7 @@ img {
   padding: 0;
   margin: 0;
   padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 50px;
 }
 
@@ -605,6 +602,37 @@ img {
 }
 
 /* Filters */
+.left-side {
+  display: grid;
+  grid-template-rows: 73px 1fr;
+  background-color:grey;
+  background-color: var(--basic-grey-light);
+}
+
+.left-side .top {
+  background-color: var(--special-grey-filtering);
+}
+
+.right-side {
+  display: grid;
+  grid-template-rows: 73px 1fr;
+}
+
+.right-side .top {
+  background-color: var(--basic-grey-light);
+}
+
+.catalog-main.grid-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1160px 1fr;
+}
+
+.catalog-main .inner-grid {
+  display: grid;
+  grid-template-columns: 268px 892px;
+  grid-template-rows: 73px 1fr;
+}
 
 .filtering-title,
 .sorting-title {
@@ -614,9 +642,18 @@ img {
   text-transform: uppercase;
 }
 
+.filtering-form {
+  grid-row: 2;
+  align-self: start;
+  padding-left: 60px;
+  padding-top: 70px;
+}
+
 .filtering-title{
-  padding: 25px 0;
-  grid-row: 1;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  background-color: var(--special-grey-filtering);
 }
 
 .sorting-title {
@@ -630,10 +667,11 @@ img {
 }
 
 .filters {
-  padding-left: 60px;
-  display: grid;
-  grid-row: 3 / 6;
+  grid-row: 1 / 4;
   align-items: center;
+  display: grid;
+  grid-template-rows: 73px 1fr;
+  background-color: var(--basic-grey-light);
 }
 
 
@@ -678,7 +716,7 @@ img {
   padding-left: 72px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--special-grey-paging);
+  background-color: var(--basic-grey-light);
 }
 
 .type-list,
