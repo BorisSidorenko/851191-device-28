@@ -151,6 +151,12 @@ img {
   box-shadow: inset 0 164px var(--special-yellow);
 }
 
+.info-wrapper {
+  margin: 0 auto;
+  width: 1160px;
+  background-color: var(--basic-white);
+}
+
 .slider {
   width: 1024px;
   margin: 0 auto;
@@ -422,10 +428,85 @@ img {
   margin: auto;
 }
 /* Our capability */
-.capabilities-list {
+.our-capabilities {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1160px 1fr;
+}
+
+.our-capabilities::before,
+.our-capabilities::after {
+  content: "";
+  height: 100%;
+  background-color: var(--basic-grey-light);
+  box-shadow: inset 0 115px 0 0 var(--basic-white);
+}
+
+.our-capabilities .grid-container {
+  display: grid;
+  grid-template-columns: 284px 1fr;
+  background-color: var(--basic-grey-light);
+  box-shadow: inset 0 115px 0 0 var(--basic-white);
+}
+
+.capabilities-list,
+.description-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.capabilities-list {
+  padding-top: 80px;
+  margin-top: 15px;
+  padding-bottom: 86px;
+  margin-bottom: 68px;
+  box-shadow: 7px 0 0 0 var(--basic-black);
+}
+
+.capabilities-item:not(:first-child) {
+  padding-top: 40px;
+}
+
+.description-list .delivery {
+  padding-right: 136px;
+  position: relative;
+}
+
+.description-list .delivery::after {
+  position: absolute;
+  top: 86px;
+  right: 0;
+  content: "";
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/icons/delivery.svg");
+}
+
+.description-list .capabilities-title,
+.description-list .capabilities-description {
+  margin: 0;
+  padding: 0;
+}
+
+.description-list .capabilities-title {
+  padding: 0 116px;
+  padding-top: 86px;
+  padding-bottom: 40px;
+}
+
+.details-button.active {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 19px;
+  box-shadow: inset 270px 40px 0 0 var(--basic-black);
+  color: var(--special-yellow);
+}
+
+.description-list .capabilities-description {
+  padding-left: 116px;
+  padding-right: 56px;
+  padding-bottom: 135px;
 }
 
 .capabilities-title {
@@ -444,6 +525,12 @@ img {
 
 .capabilities-item:nth-of-type(2) .capabilities-description {
   line-height: 30px;
+}
+
+
+.credit,
+.warranty {
+  display: none;
 }
 
 /* Brands */
@@ -948,26 +1035,26 @@ img {
 }
 
 /* Filters */
-.left-side {
+.catalog-main .left-side {
   display: grid;
   grid-template-rows: 73px 1fr;
   background-color:grey;
   background-color: var(--basic-grey-light);
 }
 
-.left-side::after {
+.catalog-main .left-side::after {
   content: "";
   width: auto;
   height: 73px;
   background-color: var(--special-grey-filtering);
 }
 
-.right-side {
+.catalog-main .right-side {
   display: grid;
   grid-template-rows: 73px 1fr;
 }
 
-.right-side::after {
+.catalog-main .right-side::after {
   content: "";
   width: auto;
   height: 73px;
