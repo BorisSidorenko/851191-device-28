@@ -51,6 +51,7 @@
   --special-yellow-footer: #FFC600;
   --special-grey-paging: #EBEBEB;
   --special-grey-filtering: #DCDCDC;
+  --special-grey-toggle: #C4C4C4;
   --main--font-family: "Gilroy", Arial, sans-serif;
   --aditional--font-family: "Open Sans", Arial, sans-serif;
 }
@@ -1078,7 +1079,7 @@ img {
 
 .catalog-main .inner-grid {
   display: grid;
-  grid-template-columns: 268px 892px;
+  grid-template-columns: 328px 832px;
   grid-template-rows: 73px 1fr;
 }
 
@@ -1094,6 +1095,7 @@ img {
   grid-row: 2;
   align-self: start;
   padding-left: 60px;
+  padding-right: 60px;
   padding-top: 70px;
 }
 
@@ -1108,10 +1110,93 @@ img {
   margin-right: 72px;
 }
 
-.price-fieldset {
+.price-fieldset,
+.color-fieldset,
+.bluetooth-fieldset  {
+  position: relative;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 38px;
+  border: none;
+}
+
+.price-fieldset legend,
+.color-fieldset legend,
+.bluetooth-fieldset legend {
+  padding-top: 14px;
+}
+
+.price-fieldset::before,
+.color-fieldset::before,
+.bluetooth-fieldset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 200px;
+  background-color: var(--basic-black);
+}
+
+.range-filter {
+  padding-top: 30px;
+}
+
+.range-controls {
+  height: 23px;
+  background-color: var(--basic-grey-light);
+  padding-top: 21px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-black);
+  opacity: 0.2;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background-color: var(--special-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-grey-toggle);
+  box-shadow: 0px 2px 2px rgba(var(--basic-black-rgb), 0.18);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 115px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.price-controls input {
+  width: 60px;
+  border: none;
+  background-color: var(--basic-grey-light);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .filters {
@@ -1160,7 +1245,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  width: 822px;
+  width: 760px;
   padding-left: 72px;
   padding-top: 25px;
   padding-bottom: 25px;
