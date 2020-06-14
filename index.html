@@ -71,7 +71,7 @@
         <h1 class="visually-hidden">Интернт-магазин гаджетов Девайс</h1>
         <section class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide-1">
+            <li class="slider-item slide-1 slide-current">
               <h2 class="visually-hidden">Восьмиметровый монопод для селфи</h2>
               <img src="img/content/slider-monopod.png" alt="Самая длинная палка для селфи в нашем магазине" width="384" height="486">
               <div class="item-wrapper">
@@ -83,7 +83,9 @@
                   Самая длинная палка для селфи доступна в нашем магазине.<br>
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a href="blank.html" class="details-button">Подробнее</a>
+                <span class="slider-button">
+                  <a href="blank.html" class="details-button">Подробнее</a>
+                </span>
                 <div class="features">
                   <dl class="feature">
                     <dt class="feature-name">Длина палки</dt>
@@ -141,9 +143,11 @@
               </div>
             </li>
           </ul>
-          <button type="button">Первый слайд</button>
-          <button type="button">Второй слайд</button>
-          <button type="button">Третий слайд</button>
+          <div class="slider-controls">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
+          </div>
         </section>
         <section class="category-items">
           <h2 class="visually-hidden">Категории товаров</h2>
