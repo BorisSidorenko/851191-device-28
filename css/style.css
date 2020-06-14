@@ -1515,6 +1515,7 @@ img {
   opacity: 1;
 }
 
+
 .back-button,
 .next-button {
   padding: 0 30px;
@@ -1620,7 +1621,7 @@ img {
   margin: 0;
   border: none;
   background-color: transparent;
-
+  cursor: pointer;
 }
 
 .image-mask .cart-button {
@@ -1703,6 +1704,15 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.page-number a:not(.active):hover {
+  opacity: 0.6;
+}
+
+.page-number a:not(.active):active,
+.page-number a:not(.active):focus {
+  opacity: 1;
 }
 
 .page-number:not(:last-child) {
