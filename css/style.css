@@ -605,10 +605,12 @@ img {
   padding-right: 38px;
 }
 
-.description-list .delivery {
+.description-list .delivery,
+.description-list .warranty,
+.description-list .credit {
   min-height: 403px;
   padding-top: 86px;
-  padding-right: 192px;
+  padding-right: 190px;
   padding-bottom: 86px;
   padding-left: 116px;
   box-sizing: border-box;
@@ -623,7 +625,36 @@ img {
   width: 136px;
   height: 164px;
   background-image: url("../img/icons/delivery.svg");
+  background-repeat: no-repeat;
 }
+
+.description-list .warranty::after {
+  position: absolute;
+  top: 68px;
+  right: 0;
+  content: "";
+  width: 171px;
+  height: 195px;
+  background-image: url("../img/icons/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.description-list .credit::after {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  content: "";
+  width: 171px;
+  height: 195px;
+  background-image: url("../img/icons/credit.svg");
+  background-repeat: no-repeat;
+}
+
+.credit,
+.warranty {
+  display: none;
+}
+
 
 .description-list .capabilities-title,
 .description-list .capabilities-description {
@@ -657,10 +688,7 @@ img {
   line-height: 30px;
 }
 
-.credit,
-.warranty {
-  display: none;
-}
+
 
 /* Brands */
 .brands-list {
