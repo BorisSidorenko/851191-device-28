@@ -160,8 +160,8 @@ img {
   width: 1024px;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 106px;
+  padding-left: 89px;
+  padding-right: 47px;
   position: relative;
 }
 
@@ -346,7 +346,7 @@ img {
 
 .slide img {
   padding-top: 17px;
-  padding-left: 59px;
+  padding-left: 0;
   width: 384px;
   height: 486px;
 }
@@ -383,7 +383,7 @@ img {
 
 .slide:nth-of-type(2) img {
   padding-top: 43px;
-  padding-left: 86px;
+  padding-left: 27px;
   width: 345px;
   height: 485px;
 }
@@ -546,7 +546,7 @@ img {
 }
 
 .capabilities-list {
-  padding-top: 80px;
+  padding-top: 90px;
   margin-top: 15px;
   padding-bottom: 86px;
   margin-bottom: 68px;
@@ -555,6 +555,57 @@ img {
 
 .capabilities-item:not(:first-child) {
   padding-top: 40px;
+}
+
+.capability-button {
+  position: relative;
+  font-family: var(--main--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 9px 24px;
+  color: var(--basic-black);
+}
+
+.capability-button span {
+  position: relative;
+}
+
+.capability-button::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 160px;
+  height: 8px;
+  background-color: var(--special-yellow-dark);
+}
+
+.capability-button:hover::before,
+.active-capability .capability-button::before  {
+  top: 0;
+  width: 284px;
+  height: 40px;
+}
+
+.capability-button:focus,
+.capability-button:active {
+  color: rgba(var(--basic-black-rgb), 0.3);
+}
+
+.active-capability .capability-button {
+  color: var(--special-yellow);
+}
+
+.active-capability .capability-button::before {
+  background-color: var(--basic-black);
+}
+
+.capabilities-item:last-child .capability-button {
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .description-list .delivery {
@@ -587,14 +638,6 @@ img {
   padding-bottom: 40px;
 }
 
-.details-button.active {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 19px;
-  box-shadow: inset 270px 40px 0 0 var(--basic-black);
-  color: var(--special-yellow);
-}
-
 .description-list .capabilities-description {
   padding-bottom: 35px;
 }
@@ -616,7 +659,6 @@ img {
 .capabilities-item:nth-of-type(2) .capabilities-description {
   line-height: 30px;
 }
-
 
 .credit,
 .warranty {
