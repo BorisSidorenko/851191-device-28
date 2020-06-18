@@ -158,10 +158,9 @@ img {
 }
 
 .slider {
-  width: 1024px;
   margin: 0;
   padding: 0;
-  padding-left: 89px;
+  padding-left: 60px;
   padding-right: 47px;
   position: relative;
 }
@@ -175,7 +174,7 @@ img {
 .slider-item {
   display: flex;
   width: 512px;
-  padding-left: 512px;
+  padding-left: 541px;
 }
 
 .slider-item .item-wrapper {
@@ -886,8 +885,17 @@ img {
   justify-content: flex-end;
 }
 
-.user-container a:first-child {
+.user-container .login-link:first-child {
   margin-right: auto;
+}
+
+.user-nav .login-link.user {
+  margin-right: 20px;
+}
+
+.user-nav .logout-link {
+  margin-right: auto;
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .user-container .login-link {
@@ -1088,6 +1096,7 @@ img {
 }
 
 .site-nav .footer-link {
+  text-transform: uppercase;
   color: var(--basic-white);
 }
 
@@ -1165,13 +1174,12 @@ img {
 }
 
 .user-nav .footer-link {
-  color: var(--basic-white);
-  opacity: 0.7;
+  color: rgba(var(--basic-white-rgb), 0.7);
 }
 
 .user-nav .footer-link:hover,
 .user-nav .footer-link:focus {
-  opacity: 1;
+  color: rgba(var(--basic-white-rgb), 1);
 }
 
 .user-nav .footer-link:active {
@@ -1256,6 +1264,7 @@ img {
 }
 
 .breadcrumbs a {
+  position: relative;
   color: rgba(var(--basic-black-rgb), 0.3);
   padding-right: 24px;
   margin-right: 16px;
@@ -1274,8 +1283,32 @@ img {
   color: rgba(var(--basic-black-rgb), 0.6);
 }
 
-.breadcrumbs a:active {
+.breadcrumbs  li .breadcrumb-link:active {
   color: rgba(var(--basic-black-rgb), 0.1);
+}
+
+.breadcrumb-index::after {
+  content: "";
+  top: 5px;
+  left: 65px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icons/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.breadcrumb-catalog::after {
+  content: "";
+  top: 5px;
+  left: 120px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icons/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 /* Filters */
@@ -1588,7 +1621,7 @@ img {
 
 .filter-button:active,
 .filter-button:focus {
-  opacity: 0.3;
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .filter-button:hover::before {
@@ -1820,7 +1853,7 @@ img {
 
 .overlay .cart-button:active,
 .overlay .cart-button:focus {
-  opacity: 0.3;
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .overlay .compare-button {
