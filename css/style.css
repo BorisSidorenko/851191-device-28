@@ -1886,6 +1886,10 @@ img {
 
 /* Hidden elements */
 .modal {
+  display: none;
+}
+
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -2065,11 +2069,15 @@ img {
   opacity: 0.7;
 }
 
-
-
 .modal-map {
-  display: none;
+  width: 994px;
+  height: 593px;
 }
+
+.modal-map img {
+  display: block;
+}
+
 
 .visually-hidden {
   position: absolute;
