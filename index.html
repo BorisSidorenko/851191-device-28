@@ -83,7 +83,7 @@
                   Самая длинная палка для селфи доступна в нашем магазине.<br>
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a href="blank.html" class="details-button slider-button">
+                <a href="blank.html" class="button">
                   <span>Подробнее</span>
                 </a>
                 <div class="features">
@@ -114,7 +114,7 @@
                   Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                   не пропускать занятия и соблюдать диету.
                 </p>
-                <a href="blank.html" class="details-button slider-button">
+                <a href="blank.html" class="button">
                   <span>Подробнее</span>
                 </a>
                 <div class="features">
@@ -125,7 +125,7 @@
                 </div>
               </div>
             </li>
-            <li class="slider-item slide ">
+            <li class="slider-item slide">
               <h2 class="visually-hidden">Необычный квадрокоптер</h2>
               <img src="img/content/slider-copter.png" alt="Необычный квадрокоптер с лазером" width="526" height="334">
               <div class="item-wrapper">
@@ -137,7 +137,7 @@
                   Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                   мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a href="blank.html" class="details-button slider-button">
+                <a href="blank.html" class="button">
                   <span>Подробнее</span>
                 </a>
                 <div class="features">
@@ -201,23 +201,23 @@
             <ul class="capabilities-list">
               <li class="capabilities-item active-capability">
                 </a>
-                <a href="blank.html" class="capability-button">
+                <a href="blank.html" class="button delivery">
                   <span>Доставка</span>
                 </a>
               </li>
               <li class="capabilities-item">
-                <a href="blank.html" class="capability-button">
+                <a href="blank.html" class="button warranty">
                   <span>Гарантия</span>
                 </a>
               </li>
               <li class="capabilities-item">
-                <a href="blank.html" class="capability-button">
+                <a href="blank.html" class="button credit">
                   <span>Кредит</span>
                 </a>
               </li>
             </ul>
             <ul class="description-list">
-              <li class="delivery">
+              <li class="delivery-description">
                 <h3 class="capabilities-title">Доставка</h3>
                 <p class="capabilities-description">
                    Мы с удовольствием доставим ваш товар прямо к вашему<br>
@@ -225,7 +225,7 @@
                    заработаем, поднимая его на ваш этаж.
                 </p>
               </li>
-              <li class="warranty">
+              <li class="warranty-description">
                 <h3 class="capabilities-title">Гарантия</h3>
                 <p class="capabilities-description">
                   Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
@@ -233,7 +233,7 @@
                   Товар, не дом, конечно же.
                 </p>
               </li>
-              <li class="credit">
+              <li class="credit-description">
                 <h3 class="capabilities-title">Кредит</h3>
                 <p class="capabilities-description">
                   Залезть в долговую яму стало проще! Кредитные консультанты<br>
@@ -292,7 +292,9 @@
                 ЖелДорЭкспедиция
               </li>
             </ul>
-            <a class="details-button" href="blank.html">Подробнее о нас</a>
+            <a href="blank.html" class="button">
+              <span>Подробнее о нас</span>
+            </a>
           </section>
           <section class="our-contacts">
             <h2>Контакты</h2>
@@ -303,7 +305,9 @@
             <a href="blank.html" class="contacts-map">
               <img src="img/content/map.png" alt="Карта офиса по адресу улица Строителей, 15" width="560" height="222">
             </a>
-            <a class="details-button" href="blank.html">Напишите нам</a>
+            <a href="blank.html" class="button">
+              <span>Напишите нам</span>
+            </a>
           </section>
         </div>
       </div>
@@ -386,20 +390,20 @@
         <div class="sender-info">
           <p>
             <label for="feedback-name">Ваше имя:</label>
-            <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" class="feedback-name">
+            <input type="text" id="feedback-name" required name="name" placeholder="Имя Фамилия" class="feedback-name">
           </p>
           <p>
             <label for="feedback-email">Ваш e-mail:</label>
-            <input type="email" id="feedback-email" name="email" placeholder="email@example.com" class="feedback-email">
+            <input type="email" required id="feedback-email" name="email" placeholder="email@example.com" class="feedback-email">
           </p>
         </div>
         <div class="sender-text">
           <p>
             <label for="feedback-letter">Текст письма:</label>
-            <textarea id="feedback-letter" name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            <textarea id="feedback-letter" required name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
           </p>
         </div>
-        <button type="submit" class="send-button">
+        <button type="submit" class="button">
           <span>Отправить</span>
         </button>
       </form>
