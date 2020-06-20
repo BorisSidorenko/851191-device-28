@@ -1629,8 +1629,11 @@ img {
   color: rgba(var(--basic-black-rgb), 0.3);
 }
 
-.button:hover::before {
-  transition:  height 0.5s;
+.button::before {
+  transition: 0.5s;
+}
+
+.button:hover::before {  
   width: 200px;
   height: 40px;
   top: 0;
