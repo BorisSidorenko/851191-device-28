@@ -1,3 +1,24 @@
+var slider = document.querySelector(".slider");
+var sliderList = slider.querySelector(".slider-list");
+var slides = sliderList.querySelectorAll(".slide");
+var sliderControls =  document.querySelector(".slider-controls");
+var sliderButtons = sliderControls.querySelectorAll("button");
+
+for (let i = 0; i < sliderButtons.length; i++) {
+  sliderButtons[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    for (let j = 0; j < sliderButtons.length; j ++) {
+      if (sliderButtons[j].classList.contains("current")) {
+        sliderButtons[j].classList.remove("current");
+        slides[j].classList.remove("slide-current")
+      }
+    }
+    sliderButtons[i].classList.add("current");
+    slides[i].classList.add("slide-current");
+  })
+}
+
+
 var writeUsLink = document.querySelector(".write-us");
 var contactPopup = document.querySelector(".modal-contact");
 var modalClose = contactPopup.querySelector(".modal-close");
