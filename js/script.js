@@ -33,7 +33,7 @@ writeUsLink.addEventListener("click", function(evt){
 modalClose.addEventListener("click", function(evt){
   evt.preventDefault();
   contactPopup.classList.remove("modal-show");
-  contactForm.classList.add("modal-error");
+  contactForm.classList.remove("modal-error");
 });
 
 contactForm.addEventListener("submit", function(evt) {
@@ -71,7 +71,30 @@ window.addEventListener("keydown", function (evt) {
     if(contactPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       contactPopup.classList.remove("modal-show");
-      contactForm.classList.add("modal-error");
+      contactForm.classList.remove("modal-error");
+    }
+  }
+});
+
+var mapLink = document.querySelector(".contacts-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function(evt){
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function(evt){
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if(mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
     }
   }
 });
