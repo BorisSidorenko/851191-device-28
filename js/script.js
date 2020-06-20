@@ -15,9 +15,28 @@ for (let i = 0; i < sliderButtons.length; i++) {
     }
     sliderButtons[i].classList.add("current");
     slides[i].classList.add("slide-current");
-  })
+  });
 }
 
+var capabilitiesList = document.querySelector(".capabilities-list");
+var capabilitiesItems = capabilitiesList.querySelectorAll(".capabilities-item");
+var capabilityButtons = capabilitiesList.querySelectorAll(".button");
+var descriptionList = document.querySelector(".description-list");
+var descriptions = descriptionList.querySelectorAll(".description");
+
+for (let i = 0; i < capabilityButtons.length; i++) {
+  capabilityButtons[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    for (let j = 0; j < capabilityButtons.length; j ++) {
+      if (capabilityButtons[j].classList.contains("active-capability")) {
+        capabilityButtons[j].classList.remove("active-capability");
+        descriptions[j].classList.remove("active-description")
+      }
+    }
+    capabilityButtons[i].classList.add("active-capability");
+    descriptions[i].classList.add("active-description");
+  });
+}
 
 var writeUsLink = document.querySelector(".write-us");
 var contactPopup = document.querySelector(".modal-contact");

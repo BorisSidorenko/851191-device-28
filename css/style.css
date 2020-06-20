@@ -564,15 +564,15 @@ img {
   background-color: var(--basic-black);
 }
 
-.active-capability .button:hover::before,
-.active-capability .button::before {
+.button.active-capability:hover::before,
+.button.active-capability::before {
   top: 0;
   width: 284px;
   height: 40px;
   background-color: var(--basic-black);
 }
 
-.active-capability .button {
+.button.active-capability {
   color: var(--special-yellow);
 }
 
@@ -626,11 +626,15 @@ img {
   background-repeat: no-repeat;
 }
 
+.delivery-description,
 .credit-description,
 .warranty-description {
   display: none;
 }
 
+.active-description {
+  display: block;
+}
 
 .description-list .capabilities-title,
 .description-list .capabilities-description {
