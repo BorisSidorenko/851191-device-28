@@ -743,11 +743,26 @@ img {
 }
 
 .about-us li {
+  position: relative;
+  padding-left: 32px;
   margin-bottom: 20px;
 }
 
 .about-us li:last-child {
   margin: 0;
+}
+
+.about-us li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
 }
 
 .container-info .button {
@@ -1005,7 +1020,7 @@ img {
   grid-template-rows: min-content min-content min-content;
   grid-column-gap: 61px;
   grid-row-gap: 20px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu-item > a {
@@ -1610,6 +1625,7 @@ img {
 }
 
 .button:hover::before {
+  transition:  height 0.5s;
   width: 200px;
   height: 40px;
   top: 0;
@@ -1891,6 +1907,15 @@ img {
   display: none;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1939,6 +1964,10 @@ img {
   resize: none;
   padding: 0;
   margin: 0;
+}
+
+.form-contact .invalid {
+  background-color: var(--special-popup-invalid);
 }
 
 .form-contact input:hover,
@@ -2051,11 +2080,46 @@ img {
   display: block;
 }
 
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+/* Animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(1000px);
+  }
+  70% {
+    transform: translateX(-50px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
