@@ -909,8 +909,12 @@ img {
   justify-content: flex-end;
 }
 
-.login-link:first-child {
+.user-container .login-link {
   margin-right: auto;
+}
+
+.footer-container .login-link {
+  margin-right: 40px;
 }
 
 .user-nav .logout-link {
@@ -1087,8 +1091,21 @@ img {
  justify-content: space-between;
 }
 
+.footer-link.login-link::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  top: 5px;
+  left: -2px;
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/footer/user.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .footer-container .user-nav {
-  width: 480px;
   height: 20px;
   display: flex;
   justify-content: space-between;
