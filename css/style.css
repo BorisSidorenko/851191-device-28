@@ -289,13 +289,15 @@ img {
   margin-right: auto;
   padding-left: 44px;
   padding-right: 42px;
+  outline: none;
 }
 
 .slider .button::before {
   width: 220px;
 }
 
-.slider .button:hover::before {
+.slider .button:hover::before,
+.slider .button:focus::before {
   width: 220px;
 }
 
@@ -534,8 +536,13 @@ img {
   padding-top: 40px;
 }
 
+.our-capabilities .button {
+  outline: none;
+}
+
 .our-capabilities .button::before,
-.our-capabilities .button:hover::before {
+.our-capabilities .button:hover::before,
+.our-capabilities .button:focus::before {
   width: 160px;
 }
 
@@ -565,6 +572,7 @@ img {
 }
 
 .button.active-capability:hover::before,
+.button.active-capability:focus::before,
 .button.active-capability::before {
   top: 0;
   width: 284px;
@@ -772,6 +780,7 @@ img {
 .container-info .button {
   margin-top: auto;
   margin-right: auto;
+  outline: none;
 }
 
 .about-us .button {
@@ -785,6 +794,7 @@ img {
 }
 
 .container-info .button:hover::before,
+.container-info .button:focus::before,
 .container-info .button::before {
   width: 260px
 }
@@ -1624,8 +1634,7 @@ img {
   cursor: pointer;
 }
 
-.button:active,
-.filter-button:focus {
+.button:active {
   color: rgba(var(--basic-black-rgb), 0.3);
 }
 
@@ -1633,12 +1642,16 @@ img {
   transition: 0.5s;
 }
 
-.button:hover::before {  
+.button:hover::before,
+.button:focus::before {
   width: 200px;
   height: 40px;
   top: 0;
 }
 
+.filter-button {
+  outline: none;
+}
 /* Sorting */
 .sorting {
   display: flex;
@@ -1854,6 +1867,7 @@ img {
   padding-bottom: 9px;
   padding-left: 37px;
   padding-right: 35px;
+  outline: none;
 }
 
 .overlay .button::before {
@@ -1866,7 +1880,8 @@ img {
   background-color: var(--special-yellow-dark);
 }
 
-.overlay .button:hover::before {
+.overlay .button:hover::before,
+.overlay .button:focus::before {
   width: 200px;
   height: 40px;
   top: 0px;
@@ -1880,9 +1895,11 @@ img {
   letter-spacing: 0.1em;
   opacity: 0.5;
   margin-top: 13px;
+  outline: none;
 }
 
-.overlay .compare-button:hover {
+.overlay .compare-button:hover,
+.overlay .compare-button:focus {
   opacity: 1;
 }
 
