@@ -10,7 +10,7 @@ for (let i = 0; i < sliderButtons.length; i++) {
     for (let j = 0; j < sliderButtons.length; j ++) {
       if (sliderButtons[j].classList.contains("current")) {
         sliderButtons[j].classList.remove("current");
-        slides[j].classList.remove("slide-current")
+        slides[j].classList.remove("slide-current");
       }
     }
     sliderButtons[i].classList.add("current");
@@ -19,7 +19,6 @@ for (let i = 0; i < sliderButtons.length; i++) {
 }
 
 var capabilitiesList = document.querySelector(".capabilities-list");
-var capabilitiesItems = capabilitiesList.querySelectorAll(".capabilities-item");
 var capabilityButtons = capabilitiesList.querySelectorAll(".button");
 var descriptionList = document.querySelector(".description-list");
 var descriptions = descriptionList.querySelectorAll(".description");
@@ -30,7 +29,7 @@ for (let i = 0; i < capabilityButtons.length; i++) {
     for (let j = 0; j < capabilityButtons.length; j ++) {
       if (capabilityButtons[j].classList.contains("active-capability")) {
         capabilityButtons[j].classList.remove("active-capability");
-        descriptions[j].classList.remove("active-description")
+        descriptions[j].classList.remove("active-description");
       }
     }
     capabilityButtons[i].classList.add("active-capability");
