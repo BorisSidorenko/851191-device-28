@@ -47,6 +47,7 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-light: #F7E296;
+  --special-grey-button: #D9D9D9;
   --special-yellow-dark: #F0C52E;
   --special-yellow-footer: #FFC600;
   --special-grey-paging: #EBEBEB;
@@ -122,7 +123,6 @@ img {
 .index-nav.nav-wrapper {
   padding-bottom: 18px;
 }
-
 
 .nav-wrapper a {
   color: var(--basic-black);
@@ -233,7 +233,6 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 15px;
 }
-
 
 .feature .feature-name {
   font-size: 13px;
@@ -478,7 +477,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .category-list .item-link:focus,
 .category-list .item-link:hover {
@@ -771,7 +769,6 @@ img {
   background-color: var(--basic-black);
 }
 
-
 .about-us li {
   position: relative;
   padding-left: 32px;
@@ -906,7 +903,6 @@ img {
 .search-form:focus-within::after {
   display: block;
 }
-
 
 .search-form,
 .user-nav {
@@ -1652,7 +1648,6 @@ img {
   letter-spacing: 0.1em;
 }
 
-
 .filters ul {
   list-style-type: none;
   padding: 0;
@@ -1800,7 +1795,6 @@ img {
   opacity: 1;
 }
 
-
 .back-button,
 .next-button {
   padding: 0 30px;
@@ -1812,7 +1806,7 @@ img {
 .back-button:focus,
 .next-button:hover,
 .next-button:focus {
-  background-color: #D9D9D9;
+  background-color: var(--special-grey-button) ;
 }
 
 .back-button:active,
