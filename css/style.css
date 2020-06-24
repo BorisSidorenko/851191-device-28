@@ -1071,6 +1071,7 @@ img {
 
 .menu-item .catalog-link {
   letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 
 .menu-item:first-child {
@@ -1582,6 +1583,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
   height: 2px;
   width: 200px;
   background-color: var(--basic-black);
@@ -1647,8 +1649,10 @@ img {
 }
 
 .price-controls input::-webkit-inner-spin-button,
-.price-controls input::-webkit-outer-spin-button {
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input {
   -webkit-appearance: none;
+  -moz-appearance: textfield;
   margin: 0;
 }
 
@@ -1806,6 +1810,7 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
+  font-weight: normal;
   opacity: 0.3;
 }
 
