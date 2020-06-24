@@ -1732,7 +1732,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  width: 760px;
+  width: 715px;
   padding-left: 72px;
   padding-top: 23px;
   padding-bottom: 25px;
@@ -1805,7 +1805,7 @@ img {
 .next-button {
   padding: 0 30px;
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .back-button:hover,
