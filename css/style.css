@@ -898,6 +898,7 @@ img {
 
 .search-form:focus-within .search-button {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .search-form:focus-within::after {
