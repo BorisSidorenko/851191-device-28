@@ -57,8 +57,8 @@
   --special-popup-grey: #F2F2F2;
   --special-popup-grey-dark: #EAEAEA;
   --special-popup-invalid: #F6DADA;
-  --main--font-family: "Gilroy", Arial, sans-serif;
-  --aditional--font-family: "Open Sans", Arial, sans-serif;
+  --main--font-family: "Gilroy", "Helvetica", sans-serif;
+  --aditional--font-family: "Open Sans", "Arial", sans-serif;
 }
 
 /* Global */
@@ -795,7 +795,7 @@ img {
   height: 8px;
   border-radius: 50%;
   background-color: var(--basic-white);
-  border: 2px solid #E5E5E5;
+  border: 2px solid var(--basic-grey-light);
   box-sizing: border-box;
 }
 
@@ -1512,7 +1512,7 @@ img {
 .bluetooth-radio:disabled + label::before,
 .bluetooth-radio:disabled + label::after {
   opacity: 0.25;
-  cursor: default;  
+  cursor: default;
 }
 
 .color-checkbox:disabled + label,
