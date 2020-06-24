@@ -400,8 +400,6 @@ img {
   padding-right: 82px;
 }
 
-
-
 /* Category items */
 .category-items .category-list {
   list-style: none;
@@ -504,6 +502,7 @@ img {
 .category-list .item-img {
   margin: auto;
 }
+
 /* Our capability */
 .our-capabilities {
   margin: 0 auto;
@@ -685,8 +684,6 @@ img {
   line-height: 30px;
 }
 
-
-
 /* Brands */
 .brands-list {
   list-style: none;
@@ -713,7 +710,7 @@ img {
 /* About us / our contacts sections */
 .container-info {
   padding-top: 53px;
-  padding-bottom: 77px;
+  padding-bottom: 76px;
   display: flex;
   justify-content: space-between;
 }
@@ -754,10 +751,26 @@ img {
 }
 
 .about-us {
+  position: relative;
   padding-right: 127px;
   display: flex;
   flex-direction: column;
 }
+
+.our-contacts {
+  position: relative;
+}
+
+.about-us::before,
+.our-contacts::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  width: 80px;
+  height: 7px;
+  background-color: var(--basic-black);
+}
+
 
 .about-us li {
   position: relative;
@@ -1345,7 +1358,7 @@ img {
   color: rgba(var(--basic-black-rgb), 0.6);
 }
 
-.breadcrumbs  li .breadcrumb-link:active {
+.breadcrumbs a[href]:active {
   color: rgba(var(--basic-black-rgb), 0.1);
 }
 
@@ -1409,7 +1422,11 @@ img {
 .catalog-main .inner-grid {
   display: grid;
   grid-template-columns: 328px 832px;
-  grid-template-rows: 73px 1fr;
+  grid-template-rows: 70px 1fr;
+}
+
+.sorting-section {
+  display: flex;
 }
 
 .filtering-title,
@@ -1709,6 +1726,7 @@ img {
 .filter-button {
   outline: none;
 }
+
 /* Sorting */
 .sorting {
   display: flex;
@@ -1716,7 +1734,7 @@ img {
   align-items: baseline;
   width: 760px;
   padding-left: 72px;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 25px;
   background-color: var(--basic-grey-light);
 }
@@ -1763,8 +1781,10 @@ img {
   width: 52px;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 26px;
   justify-content: space-between;
   margin-left: auto;
+  background-color: var(--basic-grey-light);
 }
 
 .sorting a {
@@ -1802,7 +1822,7 @@ img {
 
 /* Catalog */
 .catalog {
-  padding-top: 67px;
+  padding-top: 70px;
   padding-left: 72px;
   padding-bottom: 78px;
 }

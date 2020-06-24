@@ -78,26 +78,25 @@ modalClose.addEventListener("click", function(evt){
 
 contactForm.addEventListener("submit", function(evt) {
   if (!feedbackName.value || !feedbackEmail.value || !feedbackLetter.value) {
-      evt.preventDefault();
-      contactPopup.classList.remove("modal-error");
-      contactPopup.offsetWidth = contactPopup.offsetWidth;
-      contactPopup.classList.add("modal-error");
-      if (!feedbackName.value) {
-        feedbackName.classList.add("invalid");
-      } else {
-        feedbackName.classList.remove("invalid");
-      }
-      if (!feedbackEmail.value) {
-        feedbackEmail.classList.add("invalid");
-      } else {
-        feedbackEmail.classList.remove("invalid");
-      }
-      if (!feedbackLetter.value) {
-        feedbackLetter.classList.add("invalid");
-      } else {
-        feedbackLetter.classList.remove("invalid");
-      }
-
+    evt.preventDefault();
+    contactPopup.classList.remove("modal-error");
+    contactPopup.offsetWidth = contactPopup.offsetWidth;
+    contactPopup.classList.add("modal-error");
+    if (!feedbackName.value) {
+      feedbackName.classList.add("invalid");
+    } else {
+      feedbackName.classList.remove("invalid");
+    }
+    if (!feedbackEmail.value) {
+      feedbackEmail.classList.add("invalid");
+    } else {
+      feedbackEmail.classList.remove("invalid");
+    }
+    if (!feedbackLetter.value) {
+      feedbackLetter.classList.add("invalid");
+    } else {
+      feedbackLetter.classList.remove("invalid");
+    }
   } else {
     if (isStorageSupport) {
       localStorage.setItem("feedback-name", feedbackName.value);
