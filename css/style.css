@@ -1570,11 +1570,11 @@ img {
   padding-bottom: 37px;
 }
 
-.price-fieldset legend,
-.color-fieldset legend,
-.bluetooth-fieldset legend {
-  padding-top: 17px;
-  padding-bottom: 30px;
+.price-fieldset h3,
+.color-fieldset h3,
+.bluetooth-fieldset h3 {
+  padding-top: 3px;
+  padding-bottom: 16px;
 }
 
 .price-fieldset::before,
@@ -1664,7 +1664,7 @@ img {
   background-color: var(--basic-grey-light);
 }
 
-.filters legend {
+.filters h3 {
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
