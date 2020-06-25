@@ -195,7 +195,7 @@ img {
 }
 
 .feature-value span {
-  margin-left: 16px;
+  margin-left: 13px;
 }
 
 .slide-title {
@@ -222,7 +222,7 @@ img {
   font-weight: 300;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 60px;
+  grid-column-gap: 59px;
   grid-row-gap: 15px;
   white-space: nowrap;
 }
@@ -243,6 +243,7 @@ img {
 .feature .feature-value {
   font-size: 36px;
   line-height: 42px;
+  letter-spacing: 0.1em;
 }
 
 /* Slider settings */
