@@ -1054,12 +1054,13 @@ img {
 .menu-item:hover .sub-menu {
   z-index: 2;
   display: grid;
-  grid-template-columns: 179px 125px 104px;
+  grid-template-columns: min-content min-content min-content;
   grid-template-rows: min-content min-content min-content;
   grid-column-gap: 61px;
   grid-row-gap: 20px;
   padding-top: 18px;
   padding-bottom: 46px;
+  white-space: nowrap;
 }
 
 .menu-item > a {
@@ -1282,11 +1283,7 @@ img {
   list-style: none;
 }
 
-.social-list li:first-child {
-  margin-right: 20px;
-}
-
-.social-list li:nth-child(2) {
+.social-list li {
   margin-right: 20px;
 }
 
@@ -1780,8 +1777,10 @@ img {
 .type-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 289px;
+}
+
+.type-list .type-item {
+  margin-right: 30px;
 }
 
 .type-list a:hover,
