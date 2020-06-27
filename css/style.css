@@ -738,6 +738,7 @@ img {
 .our-contacts {
   display: flex;
   flex-direction: column;
+  width: 560px;
 }
 
 .about-us ul {
@@ -755,7 +756,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-right: 127px;
+  width: 475px;
 }
 
 .our-contacts {
