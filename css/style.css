@@ -131,8 +131,8 @@ img {
 
 .header-logo[href]:hover,
 .header-logo[href]:focus,
-.nav-wrapper a:hover,
-.nav-wrapper a:focus {
+.nav-wrapper a[href]:hover,
+.nav-wrapper a[href]:focus {
   opacity: 0.6;
 }
 
@@ -1382,7 +1382,7 @@ img {
 /* Filters */
 .catalog-main .left-side {
   display: grid;
-  grid-template-rows: 70px 1fr;ы
+  grid-template-rows: 70px 1fr;
   background-color: var(--basic-grey-light);
 }
 
