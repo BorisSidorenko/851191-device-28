@@ -1,4 +1,4 @@
-https://borissidorenko.github.io/851191-device-28/
+<a href="https://borissidorenko.github.io/851191-device-28/">Опубликованный проект Девайс</a>
 
 # Личный проект «Девайс»
 
