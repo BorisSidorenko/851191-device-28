@@ -1,0 +1,10 @@
+{
+    "name": "device-28",
+    "private": true,
+    "description": "Личный проект Девайс от HTML Academy",
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "gh-pages": "^3.1.0",
+        "gulp": "4.0.2"
+    }
+}

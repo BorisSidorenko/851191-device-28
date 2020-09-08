@@ -1,3 +1,5 @@
+https://borissidorenko.github.io/851191-device-28/
+
 # Личный проект «Девайс»
 
 * Студент: [Борис Сидоренко](https://up.htmlacademy.ru/htmlcss/28/user/851191).
